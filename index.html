@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Cyrly</title>
+</head>
+
+<body>
+  <div class="box">
+    <div class=image>
+      <img src="profile.jpg" alt="" class="box-img">
+      <div class="image__overlay">
+        <div class="image__title">Cyrly</div>
+        <p class="image__description">
+          Cyrly is the developer of CYX PROXY.
+
+        </p>
+      </div>
+      <h1>
+        I'm <span class="Type-Auto"></span>
+      </h1>
+    </div>
+    <h5>
+      Discord Bot Dev - Mobile App Dev - Growtopia PROXY Dev - Web Dev - Editor</h5>
+    <p1>
+      So... Hi! I'm Cyrly. I like watching youtube, netflix, listening to music, playing games, editing and also coding.
+      You can msg me if you need anything about coding or editing</p>
+      <ul>
+        <li><a href="https://www.facebook.com/RJAVEGT"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/@cyrly"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/BisN12"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+  </div>
+  <div class="menu0">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Cyx Proxy</a></li>
+      <li><a href="#">Discord</a></li>
+    </ul>
+  </div>
+</body>
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+  function ctrlShiftKey(e, keyCode) {
+    return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+  }
+
+  document.onkeydown = (e) => {
+    // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+    if (
+      event.keyCode === 123 ||
+      ctrlShiftKey(e, 'I') ||
+      ctrlShiftKey(e, 'J') ||
+      ctrlShiftKey(e, 'C') ||
+      (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+    )
+      return false;
+  };
+  
+
+</script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script>
+  //TYPING TEXT
+  var typed = new Typed('.Type-Auto', {
+    strings: ['Cyrly', 'Pogi'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+  });
+</script>
+</html>
